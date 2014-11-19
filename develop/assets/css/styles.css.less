@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import "libs/normalize.less";
+@import "libs/mixins.less";
+@import "libs/fonts.less";
+@import "libs/main.less";
+@import "libs/jquery.bxslider.less";
+@import "libs/controls.less";
+@import "libs/compass/stylesheets/less/icons.less";
+
+@import "libs/sprite.less";
+@import "libs/plugins.less";
+@import "libs/index.less";
+@import "libs/news.less";
+@import "libs/news_page.less";
+@import "libs/sostav_soveta.less";
+@import "libs/vypiski.less";
+@import "libs/faq.less";
+@import "libs/history.less";
+@import "libs/nko.less";
+@import "libs/menu.less";
+
+
+// <i class="sprite sprite-Untitled-1"></i>
+// <i class="sprite sprite-brillliant"></i>
+// <i class="sprite sprite-bubble"></i>
+// <i class="sprite sprite-down"></i>
+// <i class="sprite sprite-down_blue"></i>
+// <i class="sprite sprite-eye"></i>
+// <i class="sprite sprite-heart"></i>
+// <i class="sprite sprite-logo"></i>
+// <i class="sprite sprite-menu"></i>
+// <i class="sprite sprite-search"></i>
+// <i class="sprite sprite-up"></i>
+// <i class="sprite sprite-up_blue"></i>
+
+
+// <i class="sprite sprite-brillliant"></i>
+// <i class="sprite sprite-bubble"></i>
+// <i class="sprite sprite-down"></i>
+// <i class="sprite sprite-down_blue"></i>
+// <i class="sprite sprite-eye"></i>
+// <i class="sprite sprite-heart"></i>
+// <i class="sprite sprite-logo"></i>
+// <i class="sprite sprite-menu"></i>
+// <i class="sprite sprite-pdf"></i>
+// <i class="sprite sprite-search"></i>
+// <i class="sprite sprite-select_arrow"></i>
+// <i class="sprite sprite-up"></i>
+// <i class="sprite sprite-up_blue"></i>
+
+
+// =============================================
+// Layout
+// =============================================
+.container {
+	min-width: 280px;
+	// max-width: 640px;
+	padding: 0 8px;
+	margin: auto;
+}
+
+.container_plus {
+  min-width: 300px;
+  max-width: 680px;
+  width: 95%;
+  margin: auto;
+}
+
+.pull_left {
+  float: left;
+}
+
+.pull_right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.fw_bold {
+  font-weight: bold;
+}
+
+.when {
+  color: @shtext-color;
+  font-size: @font-size;
+  font-weight: 100;
+  overflow: hidden;
+}
+
+.grey_txt {
+  color: @shtext-color;
+}
+
+.blue_button {
+  color: #fff;
+  background: @button-bg;
+  width: 160px;
+  padding: 15px 0;
+  line-height: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  display: block;
+  border: none;
+  transition: all 0.4s;
+}
+  .blue_button:hover {
+    background: @button-bg-hover;
+  }
+
+.img_hower {
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 7px 0 10px;
+}
+
+.sprite.sprite-down_blue,
+.sprite.sprite-up_blue {
+  display: block;
+  margin: auto;
+}
+
+// =============================================
+// Header
+// =============================================
+
+///=========
+
+.header {
+	text-align: center;
+	position: relative;
+	left: 0;
+  	background: @bg_page;
+  	margin: 5px 0 17px;
+
+  	.container {
+  		padding-left: 36px;
+  	}
+}
+
+.sprite.sprite-menu,
+.sprite.sprite-logo {
+    vertical-align: middle;
+    margin: auto;
+}
+
+.sprite.sprite-menu {
+    // float: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 11px;
+    transition: all 0.5s;
+}
+
+// =============================================
+// Footer
+// =============================================
+
+.footer {
+	font-size: @font-size-smaller;
+	text-align: center;
+	color: @shtext-color;
+	background: @footer-bg;
+	padding: 15px 0;
+  line-height: 14px;
+  p{
+    margin-bottom: 5px;
+  }
+}
+
+// =============================================
+// Content
+// =============================================
+
+.content {
+
+}
+
+
+// =============================================
+// Main Page
+// =============================================
+
+.main {
+
+}

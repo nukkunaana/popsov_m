@@ -1,0 +1,100 @@
+{% extends "layouts/layout.html.twig" %}
+{% block content %}
+
+
+	<section class="index">
+
+		<ul class="bxslider">
+			<li>
+			  	<img class="bxslider__image" src="../assets/images/index/slide1.jpg" alt="">
+				<p class="bxslider__text img_hower">
+					<b>Юлия Басова:</b> Мы работаем </br> 
+					в постоянном диалоге с обществом
+				</p>
+			</li>
+			<li>
+				<p class="bxslider__text img_hower"><b>Slider 2</b></p>
+			</li>
+			<li>
+				<img src="../assets/images/index/slide1.jpg">
+				<p class="bxslider__text img_hower"><b>Slider 3</b></p>
+			</li>
+		</ul>
+
+
+		<section class="help">
+			<div class="container">
+				<h2>Если Вы хотите помочь</h2>
+				<ul>
+					<a href="" class="help__button">
+						<li>
+							<i class="sprite sprite-heart"></i><p>как волонтер</p>
+						</li>
+					</a>
+					<a href="" class="help__button">
+						<li>
+							<i class="sprite sprite-brillliant"></i><p>денежными средствами</p>		
+						</li>
+					</a>
+					<a href="" class="help__button">
+						<li>
+							<i class="sprite sprite-eye"></i><p>как общественный контролер</p>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</section>
+
+		<section class="index_link--article">
+			<a href="#">
+				<div class="container news__block">
+					<div class="when news__when">
+						<p class="news__content pull_right">29.10.2014</p>
+					</div>
+					
+					<div class="news__img pull_left" style="background-image: url(/assets/images/news.jpg);">
+					</div>
+					
+					<h3 class="news__content pull_right">«Артель Блаженных» как пример трудоустройства людей с ментальной инвалидностью</h3>				
+				</div>
+			</a>
+		</section>
+
+		<section class="index_link--news_page">
+			<a href="news_page.html">
+				<div class="page__img">
+					<img src="../assets/images/drugs.jpg" alt="">
+					<div class="img_hower">
+						<p class="container when">
+							<span>Сегодня, в 13:22</span>
+							<span class="pull_right"><i class="sprite sprite-bubble"></i>12</span>
+						</p>
+					</div>
+				</div>
+				<div class="container">
+					<h1>О. Ю. Голодец: россияне не пострадают от ограничения госзакупок иностранных лекарств</h1>
+				</div>
+			</a>
+		</section>
+
+		<section class="index_link--blog">
+			<a href="">
+				<div class="container">
+					<p class="blog_title">блог</p>
+					<h3>Анастасия Мануйлова</h3>
+					<p>Уникальные западные лекарства не попадут под эмбарго</p>
+					<p class="when">29.10.2014</p>
+				</div>
+			</a>
+		</section>
+
+		<form action="" class="subscription container">
+			<p>Бесплатная подписка на обновления ресурса</p>
+			<input type="text" placeholder="Эл. почта">
+			<button class="blue_button">Оформить</button>
+		</form>
+
+</section>
+
+
+{% endblock %}

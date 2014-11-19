@@ -1,0 +1,10 @@
+$ico-spacing: 3px;
+
+@import "ico/*.png";
+
+$ico-sprite-dimensions: true;
+
+@include all-ico-sprites;
+
+
+

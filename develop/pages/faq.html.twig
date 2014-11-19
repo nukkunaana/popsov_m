@@ -1,0 +1,59 @@
+{% extends "layouts/layout.html.twig" %}
+{% block content %}
+
+	<section class="faq">
+		<div class="container">
+			<div class="ask">
+				<button class="blue_button">Задать вопрос</button>
+			</div>
+			
+			
+			<form action="" class="hide faq_form">
+				<input type="text" placeholder="Имя">
+				<input type="text" placeholder="Эл. почта">
+				<textarea name="" id="" cols="30" rows="10" placeholder="Напишите вопрос"></textarea>
+				<button class="blue_button send">Задать</button>
+			</form>
+			
+
+
+			<dl>	
+				<div class="faq_block">
+					<dt data-question="meaning" class="question select">
+						<p>
+							Поясните, пожалуйста, в чем основная функция совета, и как он поможет нам решать социальные проблемы?
+						</p>
+						<p class="who_q">Владимир Соколов  <span class="when">|  21.10.14 в 13:01</span></p>
+					</dt>
+						<dd  data-answer="meaning" class="answer hide">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, sint!</p>
+						</dd>
+					 <i data-arrow="meaning" class="sprite arrow sprite-down_blue"></i>
+				</div>
+					
+				
+				
+				<div class="faq_block">
+					<dt data-question="sity" class="question select">
+						Скажите, можно ли у нас в городе организовать прием вещей для детей из детских домов и для больных детей? Куда нужно обращаться?
+						<p class="who_q">Наталья Рыжкина  <span class="when">|  Вчера, в 13:01</span></p>
+					</dt>
+						<dd data-answer="sity" class="answer hide">
+							<p>Спасибо за Ваш вопрос.</p>
+							<p>
+								Организовать сбор вещей можно в любом городе. Это можно сделать как своими силами, так и с привлечением волонтеров местных НКО и экспертов. Важно продумать логистику и взять на себя функции координатора. Чиновники из департамента социальной защиты населения помогут найти помещение, куда все желающие будут привозить вещи. В их компетенции также дать объявления в местные СМИ о проводимой акции. Так большее число людей узнает о Вашей инициативе, и скорее всего, найдутся волонтеры, которые помогут с сортировкой вещей, и спонсоры, которые возьмут на себя расходы на транспортировку.
+							</p>
+							
+							<p class="who_a"><span class="fw_bold">Елизавета Новикова  </span><span class="when">|  Вчера, в 13:01</span></p>
+							<p>Секретарь Совета при Правительстве РФ по вопросам попечительства в социальной сфере</p>
+							
+						</dd>
+					<i data-arrow="sity" class="sprite arrow sprite-down_blue"></i>
+				</div>
+
+			</dl>
+			
+		</div>
+	</section>
+
+{% endblock %}

@@ -1,0 +1,111 @@
+{% set images = '/assets/images' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=940" />
+        <title>
+          {% block title %} ПОПЕЧИТЕЛЬНЫЙ СОВЕТ {% endblock %}
+        </title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <script src="/assets/js/libs/jquery-2.1.0.min.js"></script>
+        <script src="/assets/js/dt_click.js"></script>
+        <script src="/assets/js/menu_active.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+    <section class="menu">
+            <input type="search" placeholder="Поиск">
+            <dl>
+                <dt class="select container" data-question="about">
+                    О совете
+                    <i data-arrowM="about"class="sprite sprite-down"></i>
+                </dt>
+                    <dd data-answer="about" class="hide">
+                        <div class="container">
+                            <a href="">Общая информация о совете</a>
+                            <a href="vypiski.html">Выписки из протоколов заседаний Совета</a>
+                            <a href="sostav_soveta.html">Состав Совета</a>
+                            <a href="">Секции Совета</a>
+                            <a href="">Нормативно-правовые акты</a>
+                            <a href="">План работы Совета на год</a>
+                        </div>
+                    </dd>
+
+
+                <dt class="select container" data-question="popSovNKO">
+                    Попечительские советы и НКО
+                    <i data-arrowM="popSovNKO"class="sprite sprite-down"></i>
+                </dt>
+                    <dd data-answer="popSovNKO" class="hide">
+                        <div class="container">
+                            <a href="">Общая информация</a>
+                            <a href="history.html">Из истории попечительства</a>
+                            <a href="">Как стать попечителем</a>
+                            <a href="">Социально ориентированные НКО на территории России</a>
+                        </div>
+                    </dd>
+
+
+                <dt class="container">
+                    <a href="news.html">Новости</a>
+                </dt>
+
+                <dt class="container">
+                    <a href="faq.html">Вопросы и ответы</a>
+                </dt>
+
+                <dt class="container">
+                    <a href="#">Блоги</a>
+                </dt>
+
+                <dt class="container">
+                    <a href="#">Контакты</a>
+                </dt>
+            </dl>
+    </section>
+
+
+
+        <header id="header" class="header">
+            <div class="container">
+                <!-- div class="header__menu"></div>
+                <img class="header__logo" src="/assets/images/logo.png" alt="logo"> -->
+
+                <i class="sprite sprite-menu"></i>
+                <a href="index.html"><i class="sprite sprite-logo"></i></a>
+            </div>
+        </header>
+        <section id="content" class="content">
+
+            <!-- START CONTENT-->
+
+                {% block content %}{% endblock %}
+
+            <!-- END CONTENT-->
+
+        </section>
+        <footer id="footer" class="footer">
+            <div class="container">
+                <p>
+                    © 2014 Совет при Правительстве РФ по вопросам попечительства в социальной сфере.
+                </p>
+                <p>
+                    Все материалы, находящиеся на сайте, охраняются в соответствии с законодательством РФ, в том числе об авторском праве и смежных правах
+                </p>
+            </div>
+        </footer>
+<script src="/assets/js/libs/jquery-1.10.2.min.js"></script>
+<script src="/assets/js/libs/jquery.bxslider.min.js"></script>
+
+<script src="/assets/js/callBxSlider.js"></script>
+
+<!-- <script src="/assets/js/utils.js"></script>
+<script src="/assets/js/helpers.js"></script>
+<script src="/assets/js/init.js"></script> -->
+    </body>
+</html>

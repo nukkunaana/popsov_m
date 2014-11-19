@@ -1,0 +1,98 @@
+// =============================================
+// Menu
+// =============================================
+.menu {
+	background: @blue-color;
+	padding: 10px 0;
+	z-index: 33;
+
+// стили для Js
+	position: absolute;
+  top: 0;
+  left: -100%;
+  transition: all 0.5s;
+
+// position: absolute;
+// top: 0;
+// left: -392px;
+
+
+	.container {
+		max-width: 300px;
+	}
+	a{
+		text-decoration: none;
+		color: @text-color;
+	}
+
+	dt {
+		line-height: 12px;
+		padding: 15px 10px 20px;
+		position: relative;
+
+		.sprite {
+			position: absolute;
+			bottom: 15px;
+			right: 23px;
+		}
+	}
+
+	dd {
+		background: @text-color;
+
+			a {
+			color: #e5f3fb;
+			display: block;
+			line-height: 15px;
+			padding: 14px 5% 17px;
+		}
+	}
+}
+
+.menu--active {
+	left: 0;
+}
+
+input[type="search"] {
+	background: #85aec7;
+	border: none;
+	text-align: center;
+	// width: 100%;
+	line-height: 25px;
+	border-radius: 5px;
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+	background-image: url(/assets/images/icon_search.png);
+	background-repeat: no-repeat;
+	background-position: 35% 50%;
+    transition: all 0.5s;
+}
+
+
+
+
+input[type="search"]::-webkit-input-placeholder { /* WebKit browsers */
+    color: @text-color;
+}
+input[type="search"]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: @text-color;
+   opacity:  1;
+}
+input[type="search"]::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: @text-color;
+   opacity:  1;
+}
+input[type="search"]:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: @text-color;
+}
+
+input[type="search"]:active,
+input[type="search"]:focus{
+	background-position-x: -5% ;
+}
+
+input[type="search"]:focus::-webkit-input-placeholder { color:transparent; }
+input[type="search"]:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input[type="search"]:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input[type="search"]:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */

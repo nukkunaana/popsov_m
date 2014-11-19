@@ -1,0 +1,42 @@
+Options -Indexes
+php_value magic_quotes_gpc Off
+
+#AddDefaultCharset Off
+AddDefaultCharset UTF-8
+
+
+
+<Files ~ "^\.">
+    order allow,deny
+    deny from all
+</Files>
+<Files ~ "\.(tpl|inc|cfg)$">
+        order deny,allow
+        deny from all
+</files>
+
+RewriteEngine on
+#RewriteBase /
+
+RewriteRule ^.svn/ /                                    [L,R,NC]
+RewriteRule ^.git/ /                                    [L,R,NC]
+RewriteRule ^.svn/ /                                    [L,R,NC]
+
+# Разрешить прямой доступ на всё в папке:
+RewriteCond %{REQUEST_URI} ^/vendor/ [NC]
+RewriteRule vendor/(.*)    develop/vendor/$1 [L]
+
+# Все запросы css файлов в assets/css/, 
+RewriteCond %{REQUEST_URI} ^/assets/css/ [NC]
+# для которых есть less файл 
+RewriteCond %{DOCUMENT_ROOT}/develop%{REQUEST_URI}.less -f
+# прогоняем через скрипт
+RewriteRule ^assets\/css\/(.*)\.css$ assets.php [L]
+
+# Все остальное пропускаем как есть..
+RewriteCond %{REQUEST_URI} ^/assets/ [NC]
+RewriteRule assets/(.*)    develop/assets/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L]

@@ -1,0 +1,9 @@
+.ico-sprite, .ico-point {
+  background: url('/develop/assets/images/ico.png') no-repeat;
+}
+
+.ico-point {
+  background-position: 0 0;
+  height: 1px;
+  width: 1px;
+}
